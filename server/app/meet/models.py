@@ -8,7 +8,7 @@ from app.services.models import Service
 # Create your models here.
 
 class Meet(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4)    
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)    
     date = models.DateField(null=True)
     hour= models.TimeField(null=True,)
     activa = models.BooleanField(default=True)
